@@ -1,4 +1,4 @@
-// Institute Variables
+// Variables
 
 var targetNumber = "";
 var wins = 0;
@@ -41,9 +41,7 @@ var images = [
 		resetCrystals ();
 	}
 
-// Running Code
-
-	// Inital Page Set Up
+// Inital Page Set Up
 	randomTargetNumber();
 	resetHTML ();
 	resetCrystals ();
