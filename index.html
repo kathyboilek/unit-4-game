@@ -7,26 +7,34 @@
 	<!--Reset CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-	<!-- jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	
 	<!--FontAwseome CSS-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+	<!--Google Font-->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase" rel="stylesheet">
+
 	<!--CSS Style-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!-- jQuery Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- js for icon
+	<script src="https://raw.githubusercontent.com/frexy/svg-icon-webcomponent/master/build/iconwc.js"></script> -->
+
+
 </head>
 <body>
 	
-
-<div class="hero-unit">
-	<h1>Crystal Collector Game</h1>
-	<p>See if you can add the right crystals</p>
-  </div>
-
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<!-- <svg-icon><src href="sprite.svg#si-glyph-diamond" /></svg-icon> -->
+		<h1 class="display-4">Crystal Collector Game</h1>
+	</div>
+</div>
 <div class="container">
 	<div class="row">
 		<div class="col-md-5">
@@ -34,10 +42,12 @@
 				<div class="panel-heading">
 	            	<h3 class="panel-title">How to Play!</h3>
 	          	</div>
-	          	<div>
+	          	<div class="panel-body">
+					<p><Strong>See if you can add the right crystals</Strong></p>
+
                     <ul class="fa-ul">
                         <li><span class="fa-li"><i class="fas fa-check-square"></i></span>You will be given a random number at the start of the game. </span></li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</li>
+                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>There are four crystals.  By clicking on a crystal you will add a specific amount of points to your total score.</li>
 						<li><span class="fa-li"><i class="fas fa-check-square"></i></span>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
 						<li><span class="fa-li"><i class="fas fa-check-square"></i></span>The value of each crystal is hidden from you until you click on it.</li>
 						<li><span class="fa-li"><i class="fas fa-check-square"></i></span>Each time when the game starts, the game will change the values of each crystal.</li>
@@ -45,29 +55,24 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-1">
-		</div>
-		<div class="col-md-6">
+		<div class="col-md-1"></div>
+		<div class="col-md-5">
 			<div class="row">
-				<div class="col-md-4 target-number">
+				<div class="col-md-2"></div>
+				<div class="col-md-6 target-number">
+					<div class="target-number"></div>
 				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-4 win-lose-counter">
-				</div>
+			<div class="row">
+				<div class="col-md-12 crystal-images"></div>
 			</div>
 			<div class="row">
-				<div class="col-md-12 crystal-images">
-				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-6 win-lose-counter"></div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 total-score">
-					<p>
-						Your total score is:
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 score-number">
+				<div class="col-md-2"></div>
+				<div class="col-md-6 total-score">
+					<div class="score-number"></div>
 				</div>
 			</div>
 		</div>

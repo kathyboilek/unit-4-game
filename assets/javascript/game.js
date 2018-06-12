@@ -28,9 +28,9 @@ var images = [
 	}
 
 	function resetHTML () {
-		$(".target-number").html(targetNumber);
-		$(".win-lose-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>");
-		$(".score-number").html(counter);
+		$(".target-number").html("<h4>Your target number is:</h4>" + targetNumber);
+		$(".win-lose-counter").html("<h4>Wins: " + wins + "</h4>" + "<h4>Losses: " + losses + "</h4>");
+		$(".score-number").html("<h4>Your total score is:</h4>" + counter);
 		$(".crystal-images").empty();
 	}
 
